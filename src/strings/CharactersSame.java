@@ -1,4 +1,4 @@
-package com.strings;
+package strings;
 
 public class CharactersSame {
 
@@ -7,7 +7,7 @@ public class CharactersSame {
     System.out.println(isAllCharactersSame(""));
     System.out.println(  isAllCharactersSame("aab"));
     System.out.println( isAllCharactersSame("aaa"));
-    assert isAllCharactersSame("11111");
+    System.out.println(isAllCharactersSame("11111"));
   }
 
   /**

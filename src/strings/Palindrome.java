@@ -1,4 +1,4 @@
-package com.strings;
+package strings;
 
 /** Wikipedia: https://en.wikipedia.org/wiki/Palindrome */
 class Palindrome {
@@ -7,12 +7,12 @@ class Palindrome {
   public static void main(String[] args) {
     String[] palindromes = {null, "", "aba", "123321"};
     for (String s : palindromes) {
-      assert isPalindrome(s) && isPalindromeRecursion(s) && isPalindrome1(s);
+      System.out.println(isPalindrome(s) && isPalindromeRecursion(s) && isPalindrome1(s));
     }
 
     String[] notPalindromes = {"abb", "abc", "abc123"};
     for (String s : notPalindromes) {
-      assert !isPalindrome(s) && !isPalindromeRecursion(s) && !isPalindrome1(s);
+      System.out.println(isPalindrome(s) && isPalindromeRecursion(s) && isPalindrome1(s));
     }
   }
 

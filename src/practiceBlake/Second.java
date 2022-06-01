@@ -1,6 +1,9 @@
 package practiceBlake;
 
 import lists.classes.Employee;
+import lists.classes.EmployeeLinkedList;
+import strings.CheckAnagrams;
+import strings.ReverseString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,5 +60,32 @@ public class Second {
 
         System.out.println();
         System.out.println(book1);
+        System.out.println();
+
+        Employee janeJones = new Employee("Jane", "Jones", 123);
+        Employee johnDoe = new Employee("John", "Doe", 4567);
+        Employee marySmith = new Employee("Mary", "Smith", 22);
+        Employee mikeWilson = new Employee("Mike", "Wilson", 3245);
+
+        EmployeeLinkedList list = new EmployeeLinkedList();
+        list.addTofront(janeJones);
+        list.addTofront(johnDoe);
+        list.addTofront(marySmith);
+        list.addTofront(mikeWilson);
+        list.printList();
+        System.out.println("List Size: " + list.getSize());
+        list.removeFromFront();
+        list.printList();
+        System.out.println("List Size: " + list.getSize());
+
+        CheckAnagrams checkAnagrams = new CheckAnagrams();
+        System.out.println();
+        System.out.println("abc and cba anagram? "+checkAnagrams.isAnagrams("abc", "cba"));
+        System.out.println("allow and always anagram? "+checkAnagrams.isAnagrams("allow", "always"));
+
+        ReverseString reverseString = new ReverseString();
+        System.out.println();
+        System.out.println("is abc the reverse of cba? "+reverseString.reverse("abc").equals("cba"));
+        System.out.println("is abcb the reverse of cbab? "+reverseString.reverse("abcb").equals("cbab"));
     }
 }

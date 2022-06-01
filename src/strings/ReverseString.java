@@ -1,11 +1,11 @@
-package com.strings;
+package strings;
 
 /** Reverse String using different version */
 public class ReverseString {
 
   public static void main(String[] args) {
-    assert reverse("abc123").equals("321cba");
-    assert reverse2("abc123").equals("321cba");
+    System.out.println(reverse("abc123").equals("321cba"));
+    System.out.println(reverse2("abc123").equals("321cba"));
   }
 
   /**
