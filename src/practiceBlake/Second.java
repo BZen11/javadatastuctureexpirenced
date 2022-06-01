@@ -52,5 +52,10 @@ public class Second {
         Integer sum = 0;
         sum = intList.get(0) + intList.get(1) + intList.get(2) + intList.get(3);
         System.out.println("Sum of intList numbers: " + sum);
+
+        Book book1 = new Book("Abc", "xyz", 1);
+
+        System.out.println();
+        System.out.println(book1);
     }
 }
