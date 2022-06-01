@@ -10,11 +10,21 @@ public class Second {
         List<Employee> employeeList = new ArrayList<Employee>();
         employeeList.add(new Employee("Blake", "Zenere", 1));
         employeeList.add(new Employee("Mary", "Jones", 2));
+        employeeList.add(new Employee("John", "Smith", 3));
 
         System.out.println("Number of Employees: " + employeeList.size());
         for(Employee a:employeeList){
             System.out.println(a);
         }
+
+        System.out.println(employeeList.contains((new Employee("Blake", "Zenere", 1))));
+        System.out.println(employeeList.contains((new Employee("Mary", "Smith", 22))));
+        System.out.println("Index of Blake: " + employeeList.indexOf((new Employee("Blake", "Zenere", 1))));
+
+
+        employeeList.remove(2);
+
+        employeeList.forEach(test -> {System.out.println(test);});
 
         List<String> stringList = new ArrayList<String>();
         stringList.add("Apple");
