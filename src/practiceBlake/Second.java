@@ -11,6 +11,20 @@ public class Second {
         employeeList.add(new Employee("Blake", "Zenere", 1));
         employeeList.add(new Employee("Mary", "Jones", 2));
 
-        System.out.println(employeeList);
+        System.out.println("Number of Employees: " + employeeList.size());
+        for(Employee a:employeeList){
+            System.out.println(a);
+        }
+
+        List<String> stringList = new ArrayList<String>();
+        stringList.add("Apple");
+        stringList.add("Pear");
+        stringList.add("Peach");
+
+        System.out.println();
+        System.out.println("Number of Strings: " + stringList.size());
+        for(String b:stringList){
+            System.out.println(b);
+        }
     }
 }
