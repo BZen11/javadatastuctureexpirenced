@@ -26,5 +26,21 @@ public class Second {
         for(String b:stringList){
             System.out.println(b);
         }
+
+        List<Integer> intList = new ArrayList<Integer>();
+        intList.add(2);
+        intList.add(4);
+        intList.add(8);
+        intList.add(15);
+
+        System.out.println();
+        System.out.println("Number of Ints: " + intList.size());
+        for(Integer c:intList){
+            System.out.println(c);
+        }
+
+        Integer sum = 0;
+        sum = intList.get(0) + intList.get(1) + intList.get(2) + intList.get(3);
+        System.out.println("Sum of intList numbers: " + sum);
     }
 }
