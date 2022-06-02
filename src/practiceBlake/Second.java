@@ -87,5 +87,6 @@ public class Second {
         System.out.println();
         System.out.println("is abc the reverse of cba? "+reverseString.reverse("abc").equals("cba"));
         System.out.println("is abcb the reverse of cbab? "+reverseString.reverse("abcb").equals("cbab"));
+        System.out.println();
     }
 }
